@@ -17,7 +17,7 @@ app.set('view engine', 'ejs')
 
 
 app.use('/', indexRouter)
-app.use('/new', newRouter)
+app.use('/newPost', newRouter)
 
 const PORT = 3000;
 

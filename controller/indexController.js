@@ -23,7 +23,7 @@ const messages = [
     },
   ];
 
-const nextId = 3
+
 
 const index = asyncHandler(async (req, res) => {
     res.render('index', { title: 'Mini Messageboard', messages: messages })
@@ -32,8 +32,9 @@ const index = asyncHandler(async (req, res) => {
 
 const newPost = asyncHandler(async (req, res) => {
   const {author, msg} = req.body
+  const newId = messages.length + 1
 
-  messages.push({ text: msg, user: author, added: new Date(), id: nextId++})
+  messages.push({ text: msg, user: author, added: new Date(), id: newId})
 
   res.redirect('/')
 })

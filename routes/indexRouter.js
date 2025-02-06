@@ -6,6 +6,6 @@ const indexRouter = Router()
 
 indexRouter.get('/', index)
 indexRouter.post('/new', newPost)
-indexRouter.get('/:id', userPost )
+indexRouter.get('/:id(\\d+)', userPost )
 
 module.exports = indexRouter

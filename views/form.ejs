@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New</title>
-</head>
-<body>
-    <h1>New Post</h1>
-    <form action="/new" method="POST">
-        <div>
-            <label for="author">User Name: </label>
-            <input type="text" name="author" id="author">
+
+<%- include('./partials/header') %>
+    <div class="main">
+        <h1>New Post</h1>
+        <form action="/new" method="POST">
+            <div>
+                <label for="author">User Name: </label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div>
+                <label for="msg">Message: </label>
+                <input type="text" name="msg" id="msg">
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+        <div class="back-btn">
+            <a href="/"><button>Back</button></a>
         </div>
+    </div>
 
-        <div>
-            <label for="msg">Message: </label>
-            <input type="text" name="msg" id="msg">
-        </div>
-
-
-        <button type="submit">Submit</button>
-
-    </form>
-</body>
-</html>
+    <%- include('./partials/footer') %>

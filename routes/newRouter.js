@@ -1,4 +1,4 @@
-const {newPost} = require('../controller/newController')
+const {createPost} = require('../controller/newController')
 const { Router } = require('express')
 
 
@@ -6,7 +6,7 @@ const { Router } = require('express')
 const newRouter = Router()
 
 
-newRouter.get('/', newPost)
+newRouter.get('/', createPost)
 
 
 module.exports = newRouter

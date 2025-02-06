@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= post.user %></title>
-</head>
-<body>
-    <h2><%= post.text %></h2>
-    <p>By: <%= post.user %></p>
-    <small>Created date: <%= post.added %></small>
-
-    <div><a href="/"><button>Back</button></a></div>
-</body>
-</html>
+<%- include('./partials/header') %>
+    <div class="main">
+        <h2><%= post.text %></h2>
+        <p>By: <%= post.user %></p>
+        <small>Created date: <%= post.added %></small>
+        <div class="back-btn"><a href="/"><button>Back</button></a></div>
+    </div>
+ <%- include('./partials/footer') %>

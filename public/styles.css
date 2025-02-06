@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.main {
+    flex: 1;
+}
+
+.main-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posts {
+    border: 1px solid black;
+    max-width: 40%;
+    padding: 10px;
+}
+
+.new-post {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+}
+
+.back-btn {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40%;
+}
+
+
+.submit {
+    max-width: 20%;
+}
